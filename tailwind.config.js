@@ -1,19 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
       colors: {
-        khuzama: {
-          light: '#F5F0F8',
-          DEFAULT: '#9C69E2',
-          dark: '#5D3EBC',
-        },
+        khuzama: "#7e5bef", // مثال على لون بنفسجي
+        "khuzama-light": "#f4f0ff",
+        "khuzama-dark": "#5b3fc4",
       },
       fontFamily: {
-        arabic: ['"Noto Naskh Arabic"', 'serif'],
+        arabic: ["'Noto Kufi Arabic'", "sans-serif"],
       },
     },
   },
